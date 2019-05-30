@@ -1,14 +1,16 @@
 {
-  "name": "vue-test",
+  "name": "hbr-test-qrcode",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serveHttps": "vue-cli-service serve --https",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "jsqr": "^1.2.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -20,6 +22,13 @@
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   },
+  "vue": {
+    "devServer": {
+      "allowedHosts": [
+        ".eu-west-1.compute.amazonaws.com"
+      ]
+    }
+  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -29,7 +38,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off" 
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

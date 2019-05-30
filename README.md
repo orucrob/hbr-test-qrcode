@@ -1,4 +1,9 @@
-# vue-test
+# hbr-test-qrcode
+
+This is a vuejs app with qrcode scanner.
+
+The purpose is just to show example how to use `navigator.mediaDevices.getUserMedia()` for scanning the qrcode.
+
 
 ## Project setup
 ```
@@ -7,23 +12,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serveHttps
 ```
+Note: WebRTC is working only on localhost or over https for security reasons.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
